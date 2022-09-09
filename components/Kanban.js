@@ -14,7 +14,8 @@ function mapOrderToCard(list) {
       order: item.Orden,
       orderDescription: `${item["Fecha de entrega"].substr(0, 4)}-${item.plantas.Planta}-#${item.Orden}`,
       transplantDate: item['Fecha transplante'],
-      deliveryDate: item['Fecha de entrega']
+      deliveryDate: item['Fecha de entrega'],
+      state: item['Estado vivero']
     }
   })
 }
